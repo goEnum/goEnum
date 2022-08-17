@@ -1,0 +1,302 @@
+version: "3.9"
+services:
+  percona:
+    image: percona
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  joomla:
+    image: joomla
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  neo4j:
+    image: neo4j
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  buildpack-deps:
+    image: buildpack-deps
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  flink:
+    image: flink
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  couchbase:
+    image: couchbase
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  mongo-express:
+    image: mongo-express
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  composer:
+    image: composer
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  zookeeper:
+    image: zookeeper
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  perl:
+    image: perl
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  logstash:
+    image: logstash:8.2.3
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  jenkins:
+    image: jenkins/jenkins:lts
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  drupal:
+    image: drupal
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  groovy:
+    image: groovy
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  rocket.chat:
+    image: rocket.chat
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  kapacitor:
+    image: kapacitor
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  fedora:
+    image: fedora
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  owncloud:
+    image: owncloud/server
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  mediawiki:
+    image: mediawiki
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  pypy:
+    image: pypy
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  rust:
+    image: rust
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  redmine:
+    image: redmine
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  jruby:
+    image: jruby
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  erlang:
+    image: erlang
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  elixir:
+    image: elixir
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  phpmyadmin:
+    image: phpmyadmin
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  mono:
+    image: mono
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  odoo:
+    image: odoo
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  jetty:
+    image: jetty
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  hylang:
+    image: hylang
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  amazoncorretto:
+    image: amazoncorretto
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  clojure:
+    image: clojure
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  oraclelinux:
+    image: oraclelinux:8.6
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  xwiki:
+    image: xwiki
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  arangodb:
+    image: arangodb
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  tomee:
+    image: tomee
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  websphere-liberty:
+    image: websphere-liberty
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  aerospike:
+    image: aerospike
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  haxe:
+    image: haxe
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  swift:
+    image: swift
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  ros:
+    image: ros
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  julia:
+    image: julia
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  gcc:
+    image: gcc
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  yourls:
+    image: yourls
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  archlinux:
+    image: archlinux
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  eclipse-temurin:
+    image: eclipse-temurin
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  monica:
+    image: monica
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  neurodebian:
+    image: neurodebian
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  haskell:
+    image: haskell
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true
+  photon:
+    image: photon
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+    privileged: true

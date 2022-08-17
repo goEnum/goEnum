@@ -1,0 +1,252 @@
+version: "3.9"
+services:
+  percona:
+    image: percona
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  joomla:
+    image: joomla
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  neo4j:
+    image: neo4j
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  buildpack-deps:
+    image: buildpack-deps
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  flink:
+    image: flink
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  couchbase:
+    image: couchbase
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  mongo-express:
+    image: mongo-express
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  composer:
+    image: composer
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  zookeeper:
+    image: zookeeper
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  perl:
+    image: perl
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  logstash:
+    image: logstash:8.2.3
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  jenkins:
+    image: jenkins/jenkins:lts
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  drupal:
+    image: drupal
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  groovy:
+    image: groovy
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  rocket.chat:
+    image: rocket.chat
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  kapacitor:
+    image: kapacitor
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  fedora:
+    image: fedora
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  owncloud:
+    image: owncloud/server
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  mediawiki:
+    image: mediawiki
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  pypy:
+    image: pypy
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  rust:
+    image: rust
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  redmine:
+    image: redmine
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  jruby:
+    image: jruby
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  erlang:
+    image: erlang
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  elixir:
+    image: elixir
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  phpmyadmin:
+    image: phpmyadmin
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  mono:
+    image: mono
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  odoo:
+    image: odoo
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  jetty:
+    image: jetty
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  hylang:
+    image: hylang
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  amazoncorretto:
+    image: amazoncorretto
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  clojure:
+    image: clojure
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  oraclelinux:
+    image: oraclelinux:8.6
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  xwiki:
+    image: xwiki
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  arangodb:
+    image: arangodb
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  tomee:
+    image: tomee
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  websphere-liberty:
+    image: websphere-liberty
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  aerospike:
+    image: aerospike
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  haxe:
+    image: haxe
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  swift:
+    image: swift
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  ros:
+    image: ros
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  julia:
+    image: julia
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  gcc:
+    image: gcc
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  yourls:
+    image: yourls
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  archlinux:
+    image: archlinux
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  eclipse-temurin:
+    image: eclipse-temurin
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  monica:
+    image: monica
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  neurodebian:
+    image: neurodebian
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  haskell:
+    image: haskell
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
+  photon:
+    image: photon
+    volumes:
+      - ../build/goEnum_linux-amd64:/goEnum_linux-amd64
+    command: /goEnum_linux-amd64 -v
